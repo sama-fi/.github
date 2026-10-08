@@ -7,11 +7,13 @@
 
 ### Find the other side of your rebalance.
 
-Swap tokenized stocks directly with other people, wallet to wallet, on BNB Chain.
+**Wallet-to-wallet matching for tokenized stocks on BNB Chain.**
 
-**[Open the app](https://app.samafi.xyz)** &nbsp;·&nbsp; [Read the guide](https://docs.samafi.xyz) &nbsp;·&nbsp; [See the proof](https://samafi.xyz/proof)
+[Website](https://samafi.xyz) &nbsp;·&nbsp; [App](https://app.samafi.xyz) &nbsp;·&nbsp; [Docs](https://docs.samafi.xyz) &nbsp;·&nbsp; [On-chain proof](https://samafi.xyz/proof)
 
-🇮🇩 [Baca dalam Bahasa Indonesia](https://github.com/sama-fi/.github/blob/HEAD/profile/README.id.md)
+[![BNB Chain](https://img.shields.io/badge/BNB%20Chain-mainne<div align="center">
+
+<img width="125" height="125" alt="7842492d-55ed-4957-bb3e-13f39c15fcd5-Photoroom" src="https://github.com/user-attachments/assets/24768fd2-f507-4399-a44b-12360015280d" />
 
 </div>
 
