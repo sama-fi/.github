@@ -39,7 +39,8 @@ Tokenized US stocks (Binance **bStocks**) now trade on BNB Chain, but most of th
 
 <table>
 <tr>
-<td width="50%"><img alt="Set your target mix" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/set-target.png"><br><sub><b>Set your target mix</b></sub></td>
+<td width="50%"><img alt="Set your target mix" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/set-target.png"<img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/e23f1ee8-cab2-4d57-bfa6-d363ce8378b7" />
+><br><sub><b>Set your target mix</b></sub></td>
 <td width="50%"><img alt="A settled round with its transfers" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/settled.png"><br><sub><b>Every transfer settled and verified</b></sub></td>
 </tr>
 </table>
