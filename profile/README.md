@@ -5,15 +5,18 @@
   <img alt="SAMA" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/logo-light.svg" width="280">
 </picture>
 
+
 ### Find the other side of your rebalance.
 
 **Wallet-to-wallet matching for tokenized stocks on BNB Chain.**
 
 [Website](https://samafi.xyz) &nbsp;·&nbsp; [App](https://app.samafi.xyz) &nbsp;·&nbsp; [Docs](https://docs.samafi.xyz) &nbsp;·&nbsp; [On-chain proof](https://samafi.xyz/proof)
 
-[![BNB Chain](https://img.shields.io/badge/BNB%20Chain-mainne<div align="center">
+[![BNB Chain](https://img.shields.io/badge/BNB%20Chain-mainnet-F0B90B?logo=binance&logoColor=white)](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
+[![Contract](https://img.shields.io/badge/contract-source%20verified-2EA44F)](https://repo.sourcify.dev/56/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.33-363636?logo=solidity&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
 
-<img width="125" height="125" alt="7842492d-55ed-4957-bb3e-13f39c15fcd5-Photoroom" src="https://github.com/user-attachments/assets/24768fd2-f507-4399-a44b-12360015280d" />
 
 </div>
 
