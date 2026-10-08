@@ -39,8 +39,7 @@ Tokenized US stocks (Binance **bStocks**) now trade on BNB Chain, but most of th
 ## See it in action
 <img width="1448" height="1086" alt="Group 60" src="https://github.com/user-attachments/assets/4c0ba21c-cd15-49bb-8c6e-cd75167d00dc" />
 <img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/03ee96d7-247f-4d24-98f2-ff2314669409" />
-
-<img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/ed6d589f-dc8d-4e96-b46d-4d6e9c7d5e3d" />
+<img width="1448" height="1086" alt="www" src="https://github.com/user-attachments/assets/209508e0-e4cd-49a1-8da5-979d729500db" />
 
 
 ## How it works
