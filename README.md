@@ -41,12 +41,13 @@ Tokenized US stocks (Binance **bStocks**) now trade on BNB Chain, but most of th
 <table>
 <tr>
 <td width="50%"><img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/03ee96d7-247f-4d24-98f2-ff2314669409" />
-><br><sub><b>Set your target mix</b></sub></td>
-<td width="50%"><img alt="A settled round with its transfers" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/settled.png"><br><sub><b>Every transfer settled and verified</b></sub></td>
+<br><sub><b>Set your target mix</b></sub></td>
+<td width="50%"><img width="1448" height="1086" alt="Group 60" src="https://github.com/user-attachments/assets/4c0ba21c-cd15-49bb-8c6e-cd75167d00dc" /><br><sub><b>Every transfer settled and verified</b></sub></td>
 </tr>
+
 </table>
 
-<img alt="A round moving from Join to Finish" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/round-progress.png" width="100%">
+<img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/ed6d589f-dc8d-4e96-b46d-4d6e9c7d5e3d" />
 
 <sub>Follow each round from Join to Finish. Screens show sample data.</sub>
 
