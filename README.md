@@ -7,12 +7,18 @@
 
 ### Find the other side of your rebalance.
 
-Swap tokenized stocks directly with other people, wallet to wallet, on BNB Chain.
+### Find the other side of your rebalance.
 
-**[Open the app](https://app.samafi.xyz)** &nbsp;·&nbsp; [Read the guide](https://docs.samafi.xyz) &nbsp;·&nbsp; [See the proof](https://samafi.xyz/proof)
+**Wallet-to-wallet matching for tokenized stocks on BNB Chain.**
 
-🇮🇩 [Baca dalam Bahasa Indonesia](https://github.com/sama-fi/.github/blob/HEAD/profile/README.id.md)
+[Website](https://samafi.xyz) &nbsp;·&nbsp; [App](https://app.samafi.xyz) &nbsp;·&nbsp; [Docs](https://docs.samafi.xyz) &nbsp;·&nbsp; [On-chain proof](https://samafi.xyz/proof)
 
+[![BNB Chain](https://img.shields.io/badge/BNB%20Chain-mainnet-F0B90B?logo=binance&logoColor=white)](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
+[![Contract](https://img.shields.io/badge/contract-source%20verified-2EA44F)](https://repo.sourcify.dev/56/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.33-363636?logo=solidity&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+
+</div>
 </div>
 
 ---
