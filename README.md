@@ -35,11 +35,12 @@ Tokenized US stocks (Binance **bStocks**) now trade on BNB Chain, but most of th
 - Swapping $10K costs about **0.3%** in the deepest pool and **several percent** in the thinnest. *(PancakeSwap V3 quotes, October 2026.)*
 - Even when two people want opposite trades, they never find each other, so both pay the pool.
 
+
 ## See it in action
 
 <table>
 <tr>
-<td width="50%"><img alt="Set your target mix" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/set-target.png"<img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/e23f1ee8-cab2-4d57-bfa6-d363ce8378b7" />
+<td width="50%"><img width="1448" height="1086" alt="Group 59" src="https://github.com/user-attachments/assets/03ee96d7-247f-4d24-98f2-ff2314669409" />
 ><br><sub><b>Set your target mix</b></sub></td>
 <td width="50%"><img alt="A settled round with its transfers" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/screens/settled.png"><br><sub><b>Every transfer settled and verified</b></sub></td>
 </tr>
