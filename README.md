@@ -5,92 +5,87 @@
 
 ### Find the other side of your rebalance.
 
-**Wallet-to-wallet matching for tokenized stocks on BNB Chain.**
+Swap tokenized stocks directly with other people, wallet to wallet, on BNB Chain.
 
-[Website](https://samafi.xyz) &nbsp;·&nbsp; [App](https://app.samafi.xyz) &nbsp;·&nbsp; [Docs](https://docs.samafi.xyz) &nbsp;·&nbsp; [On-chain proof](https://samafi.xyz/proof)
-
-[![BNB Chain](https://img.shields.io/badge/BNB%20Chain-mainnet-F0B90B?logo=binance&logoColor=white)](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
-[![Contract](https://img.shields.io/badge/contract-source%20verified-2EA44F)](https://repo.sourcify.dev/56/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8)
-![Solidity](https://img.shields.io/badge/Solidity-0.8.33-363636?logo=solidity&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+**[Open the app](https://app.samafi.xyz)** &nbsp;·&nbsp; [Read the guide](https://docs.samafi.xyz) &nbsp;·&nbsp; [See the proof](https://samafi.xyz/proof)
 
 </div>
 
 ---
 
-## The problem
+## What is SAMA?
 
-Tokenized US stocks, Binance **bStocks** such as NVDAB, TSLAB and AAPLB, now trade on BNB Chain. But every wallet that rebalances goes to a liquidity pool on its own, and pays the pool's fee, spread and price impact on each trade, even when another holder wants exactly the opposite.
+When you rebalance your portfolio, you usually trade against a liquidity pool and pay its fees. But often someone else wants to make the exact opposite trade.
 
-Liquidity is also thin and uneven. Only 18 of the 88 bStocks have a PancakeSwap V3 pool holding $100K or more of USDT, and a $10K swap costs from about 0.3% in the deepest pool to several percent in the thinnest.
+**SAMA finds that person.** It matches your trade with others who are heading the other way, even across three or more wallets, and swaps directly between you. What matches skips the pool entirely.
 
-## What SAMA does
+## How it works
 
-SAMA groups wallets into **Circles**, such as a community, a Telegram investment group or friends, that rebalance the same assets on a schedule. Each round:
+1. **Sign in** with your email or your own wallet.
+2. **Set your target mix.** Pick a preset or choose your own percentages.
+3. **Join a Circle.** A Circle is a group of people who rebalance the same tokens together. In each round, SAMA pairs you with the people who are on the other side.
+4. **Approve the exact amounts.** Everything is settled in one transaction: it all goes through, or nothing moves.
 
-1. **Set a target.** Pick a preset, type percentages, describe it in plain words, or review a proposal from the AI assistant.
-2. **Lock one price snapshot** (Binance Web3 RWA API, cross-checked against a PancakeSwap V3 TWAP where a liquid pool exists) and **sign an intent**. Signing is free and moves no tokens.
-3. **Match.** A min-cost circulation matcher finds every part of those rebalances that cancels out, including **rings of three or more wallets** that pairwise venues cannot see.
-4. **Approve and settle.** Each member approves the exact plan, and the `SamaSettlement` contract moves every transfer **wallet to wallet in one atomic transaction**. Either every leg settles or none does.
-5. **Verify.** An independent verifier re-reads the settlement from a separate RPC after finality and issues a receipt.
-6. **Handle the rest.** Whatever did not match is carried to the next round, cancelled, or swapped on PancakeSwap V3 from the user's own wallet, only when the cost stays under the user's cap.
+Anything that didn't find a match can wait for the next round, be cancelled, or be swapped on PancakeSwap if the cost is within the limit you set.
 
-```mermaid
-flowchart LR
-    A["Wallet A<br/>sells NVDAB<br/>wants SPYB"] -- NVDAB --> B["Wallet B<br/>sells AAPLB<br/>wants NVDAB"]
-    B -- AAPLB --> C["Wallet C<br/>sells SPYB<br/>wants AAPLB"]
-    C -- SPYB --> A
-```
+## Why people use it
 
-No two of these wallets fit together, yet all three do. SAMA settles the whole ring in one transaction and no pool is touched.
+- **No pool fee on what matches.** Matched trades skip the pool's fee, spread and price impact. You only pay normal network gas.
+- **Your tokens stay yours.** SAMA never holds your funds. Tokens move straight from wallet to wallet.
+- **You stay in control.** You see and approve the exact amounts before anything happens.
+- **Checkable on-chain.** The contract is public and its source is verified: [`0x7811…2AC8`](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8).
 
-## How it is different
+## Good to know
 
-| | Typical DEX or order book | SAMA |
-|---|---|---|
-| Who you trade with | The pool, at the pool's price | Other wallets heading the opposite way, at one shared snapshot price |
-| Multi-party trades | Pairwise only | Rings of three or more wallets, settled together |
-| Cost of the matched part | Pool fee, spread and price impact | No pool fee, spread or price impact. Only network gas applies |
-| Custody | Tokens sit in the pool | Never. The contract holds no funds |
-| Failure mode | Partial fills, slippage | All or nothing |
-| Proof | A swap receipt | An independent verifier re-reads every settlement |
-| AI | None, or an agent that trades for you | An agent that only reads and proposes. You approve every change |
+SAMA is early-stage. The contract has not been externally audited yet, so each plan is capped at **$500** for now. You need a little BNB to pay network fees. SAMA works with Binance **bStocks**, which are tokenized US stocks and ETFs on BNB Chain.
 
-## Live on BNB Chain
+SAMA coordinates the trades you choose. It gives no investment advice.
 
-| | |
-|---|---|
-| **Network** | BNB Smart Chain mainnet (chain 56) |
-| **Contract** | [`SamaSettlement` · `0x7811…2AC8`](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8) |
-| **Verification** | Source verified on [BscScan](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8#code) and [Sourcify](https://repo.sourcify.dev/56/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8) (exact match) |
-| **Assets** | 88 bStocks (75 stocks, 13 ETFs), WBNB and USDT |
-| **Safety cap** | Plans are capped at $500 while the contract is unaudited |
+<details>
+<summary><b>Bahasa Indonesia</b></summary>
 
-## Repositories
+### Temukan pasangan untuk rebalance-mu.
 
-| Repository | What it is |
-|---|---|
-| [**sama-frontend**](https://github.com/sama-fi/sama-frontend) | The web app, landing page and documentation. Next.js 16, React 19, Privy sign-in with email or wallet, mobile-first, English and Bahasa Indonesia |
-| [**sama-backend**](https://github.com/sama-fi/sama-backend) | The API on Bun and Elysia: sessions, targets, Circles, the round state machine, leftovers, proof, market data and the AI assistant |
+Tukar saham tokenisasi langsung dengan orang lain, dari dompet ke dompet, di BNB Chain.
 
-## Built with
+**[Buka aplikasi](https://app.samafi.xyz)** &nbsp;·&nbsp; [Baca panduan](https://docs.samafi.xyz) &nbsp;·&nbsp; [Lihat buktinya](https://samafi.xyz/proof)
 
-- **Contract:** Solidity 0.8.33 and Foundry, with 33 unit tests (including fuzzing) and 22 mainnet-fork tests on real bStocks
-- **Backend:** Bun, Elysia and viem
-- **Frontend:** Next.js, React and Privy
-- **Prices:** Binance Web3 RWA API, with PancakeSwap V3 TWAP as the on-chain guard
-- **AI assistant:** a tool-calling agent that reads the user's own data and proposes actions, and never moves funds on its own
+#### Apa itu SAMA?
 
-## Status
+Saat kamu mengatur ulang isi portofolio, biasanya kamu bertransaksi dengan kolam likuiditas (pool) dan membayar biayanya. Padahal sering ada orang lain yang ingin melakukan transaksi yang persis berlawanan.
 
-SAMA is early-stage software. The settlement contract is live on BNB Chain mainnet and **has not been externally audited**, which is why plans are capped at $500. Users currently pay their own network gas, and gas sponsorship is planned.
+**SAMA mempertemukan kalian.** Transaksimu dicocokkan dengan orang-orang yang bergerak ke arah sebaliknya, bahkan sampai tiga dompet atau lebih, lalu ditukar langsung di antara kalian. Bagian yang cocok tidak lewat pool sama sekali.
 
-SAMA coordinates the trades you choose. It gives no investment advice and does not decide whether you may trade an asset.
+#### Cara kerjanya
+
+1. **Masuk** dengan email atau dompetmu sendiri.
+2. **Tentukan komposisi yang kamu mau.** Pilih preset atau isi persentasenya sendiri.
+3. **Gabung ke sebuah Circle.** Circle adalah kelompok orang yang mengatur ulang token yang sama bersama-sama. Di tiap putaran, SAMA memasangkanmu dengan orang yang ada di sisi seberang.
+4. **Setujui jumlah yang persis.** Semuanya diselesaikan dalam satu transaksi: seluruhnya berhasil, atau tidak ada yang berpindah.
+
+Bagian yang tidak ketemu pasangan bisa menunggu putaran berikutnya, dibatalkan, atau ditukar lewat PancakeSwap bila biayanya masih dalam batas yang kamu tentukan.
+
+#### Kenapa dipakai
+
+- **Tanpa biaya pool untuk yang cocok.** Transaksi yang cocok melewati biaya pool, selisih harga, dan geseran harga. Kamu hanya membayar biaya jaringan (gas) yang biasa.
+- **Token tetap milikmu.** SAMA tidak pernah memegang dana. Token berpindah langsung dari dompet ke dompet.
+- **Kamu yang mengendalikan.** Kamu melihat dan menyetujui jumlah yang persis sebelum apa pun terjadi.
+- **Bisa diperiksa di blockchain.** Kontraknya publik dan kode sumbernya terverifikasi: [`0x7811…2AC8`](https://bscscan.com/address/0x7811a30D29d6c2Ca95Aeb4EE9D896cE44Cb72AC8).
+
+#### Perlu diketahui
+
+SAMA masih tahap awal. Kontraknya belum diaudit pihak luar, jadi nilai tiap rencana dibatasi **$500** untuk sementara. Kamu perlu sedikit BNB untuk biaya jaringan. SAMA bekerja dengan **bStocks** Binance, yaitu saham dan ETF Amerika yang ditokenisasi di BNB Chain.
+
+SAMA mengoordinasikan transaksi yang kamu pilih. SAMA tidak memberi nasihat investasi.
+
+</details>
 
 ---
 
 <div align="center">
 
 Built by **NGDKLabs** &nbsp;·&nbsp; *SAMA* means "the same" and "together" in Indonesian.
+
+[Website](https://samafi.xyz) &nbsp;·&nbsp; [App](https://app.samafi.xyz) &nbsp;·&nbsp; [Docs](https://docs.samafi.xyz) &nbsp;·&nbsp; [Frontend](https://github.com/sama-fi/sama-frontend) &nbsp;·&nbsp; [Backend](https://github.com/sama-fi/sama-backend)
 
 </div>
