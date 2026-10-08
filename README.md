@@ -22,7 +22,7 @@
 
 Tokenized US stocks, Binance **bStocks** such as NVDAB, TSLAB and AAPLB, now trade on BNB Chain. But every wallet that rebalances goes to a liquidity pool on its own, and pays the pool's fee, spread and price impact on each trade, even when another holder wants exactly the opposite.
 
-Liquidity is also thin and uneven. Only 18 of the 88 bStocks have a PancakeSwap V3 pool holding $100K or more of USDT, and a $10K swap costs from about 0.3% in the deepest pool to several percent in the thinnest (PancakeSwap V3 quotes, October 2026).
+Liquidity is also thin and uneven. Only 18 of the 88 bStocks have a PancakeSwap V3 pool holding $100K or more of USDT, and a $10K swap costs from about 0.3% in the deepest pool to several percent in the thinnest.
 
 ## What SAMA does
 
