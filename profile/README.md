@@ -20,9 +20,11 @@
 
 </div>
 
-
 ---
 <img width="1448" height="1086" alt="Group 60" src="https://github.com/user-attachments/assets/4c0ba21c-cd15-49bb-8c6e-cd75167d00dc" />
+
+
+---
 ## What is SAMA?
 
 When you rebalance your portfolio, you usually trade against a liquidity pool and pay its fees. But often someone else wants to make the exact opposite trade.
