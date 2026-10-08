@@ -2,7 +2,8 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/logo-dark.svg">
-  <img alt="SAMA" src="https://raw.githubusercontent.com/sama-fi/.github/HEAD/profile/logo-light.svg" width="300">
+<img width="1254" height="1254" alt="7842492d-55ed-4957-bb3e-13f39c15fcd5-Photoroom" src="https://github.com/user-attachments/assets/e7288c2b-5f0f-4509-9f36-149a6e9b8c58" />
+
 </picture>
 
 ### Find the other side of your rebalance.
